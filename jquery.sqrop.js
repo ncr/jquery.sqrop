@@ -15,16 +15,16 @@
     return this.each(function(){
       var e = $(this),
 
-        width = e.width(),
+        width  = e.width(),
         height = e.height(),
 
         min = Math.min(width, height),
         max = Math.max(width, height),
 
         length = l || min,
-        ratio = length / min;
+        ratio  = length / min;
 
-        newWidth = Math.round(width * ratio),
+        newWidth  = Math.round(width * ratio),
         newHeight = Math.round(height * ratio),
 
         deltaX = Math.round((newWidth - length) / 2),
@@ -32,7 +32,7 @@
 
         outer = $("<span />").css({
           position: "relative",
-          width: length,
+          width:  length,
           height: length,
           display: "inline-block"
         }),
@@ -40,11 +40,11 @@
         inner = $("<span />").css({
           position: "absolute",
           clip: "rect(" + deltaY + "px " + (length + deltaX) + "px " + (length + deltaY) + "px " + deltaX + "px)",
-          top: -deltaY,
+          top:  -deltaY,
           left: -deltaX
         });
 
-      e.css({width: newWidth, height: newHeight}).wrap(inner).parent().wrap(outer);
+      e.css({ width: newWidth, height: newHeight }).wrap(inner).parent().wrap(outer);
     });
   }
 })(jQuery);
