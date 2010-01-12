@@ -10,9 +10,9 @@
     $("img").sqrop(200) // square crop with 200px side length, image scaled accordingly
 */
 
-(function($){
-  $.fn.sqrop = function(l){
-    return this.each(function(){
+(function ($) {
+  $.fn.sqrop = function (l) {
+    return this.each(function () {
       var e = $(this),
 
         width  = e.width(),
