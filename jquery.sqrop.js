@@ -8,6 +8,13 @@
   Docs:
     $("img").sqrop()    // square crop with side length equal to shorter side of image
     $("img").sqrop(200) // square crop with 200px side length, image scaled accordingly
+
+    Ensure your your images are loaded when calling #sqrop(). Use something like this:
+    
+    $(document).ready(function(){
+      $("img").load(function(){$(this).sqrop(123)})
+    })
+
 */
 
 (function ($) {
