@@ -11,8 +11,8 @@
 
     Ensure your your images are loaded when calling #sqrop(). Use something like this:
     
-    $(document).ready(function(){
-      $("img").load(function(){$(this).sqrop(123)})
+    $(document).ready(function(){ // document ready event
+      $("img").load(function(){$(this).sqrop(123)}) // image load event
     })
 
 */
@@ -29,7 +29,7 @@
         max = Math.max(width, height),
 
         length = l || min,
-        ratio  = length / min;
+        ratio  = length / min,
 
         newWidth  = Math.round(width * ratio),
         newHeight = Math.round(height * ratio),
