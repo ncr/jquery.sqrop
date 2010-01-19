@@ -39,16 +39,16 @@
 
         outer = $("<span />").css({
           position: "relative",
-          width:  length,
-          height: length,
-          display: "inline-block"
+          display:  "inline-block",
+          width:    length,
+          height:   length
         }),
 
         inner = $("<span />").css({
           position: "absolute",
-          clip: "rect(" + deltaY + "px " + (length + deltaX) + "px " + (length + deltaY) + "px " + deltaX + "px)",
-          top:  -deltaY,
-          left: -deltaX
+          clip:     "rect(" + deltaY + "px " + (length + deltaX) + "px " + (length + deltaY) + "px " + deltaX + "px)",
+          top:      -deltaY,
+          left:     -deltaX
         });
 
       e.css({ width: newWidth, height: newHeight }).wrap(outer).wrap(inner);
