@@ -51,7 +51,7 @@
           left: -deltaX
         });
 
-      e.css({ width: newWidth, height: newHeight }).wrap(inner).parent().wrap(outer);
+      e.css({ width: newWidth, height: newHeight }).wrap(outer).wrap(inner);
     });
   }
 })(jQuery);
