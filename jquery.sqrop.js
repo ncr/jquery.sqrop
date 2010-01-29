@@ -6,8 +6,8 @@
 
     Ensure your your images are loaded when calling #sqrop(). Use something like this:
     
-    $(document).ready(function(){ // document ready event
-      $("img").load(function(){$(this).sqrop(123)}) // image load event
+    $(document).ready(function () {
+      $("img").load(function () { $(this).sqrop(123) }) // image load event
     })
 
   Inspiration: http://www.seifi.org/css/creating-thumbnails-using-the-css-clip-property.html
