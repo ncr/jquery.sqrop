@@ -1,9 +1,4 @@
 /* 
-  Author: Jacek Becela 
-  Homepage: http://github.com/ncr/sqrop
-  License: MIT
-
-  Inspiration: http://www.seifi.org/css/creating-thumbnails-using-the-css-clip-property.html
 
   Docs:
     $("img").sqrop()    // square crop with side length equal to shorter side of image
@@ -14,6 +9,12 @@
     $(document).ready(function(){ // document ready event
       $("img").load(function(){$(this).sqrop(123)}) // image load event
     })
+
+  Inspiration: http://www.seifi.org/css/creating-thumbnails-using-the-css-clip-property.html
+
+  Homepage: http://github.com/ncr/sqrop
+  Author: Jacek Becela 
+  License: MIT
 
 */
 
