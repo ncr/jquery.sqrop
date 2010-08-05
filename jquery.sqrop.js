@@ -27,7 +27,6 @@
         height = e.height(),
 
         min = Math.min(width, height),
-        max = Math.max(width, height),
 
         length = l || min,
         ratio  = length / min,
